@@ -10,7 +10,7 @@ import java.util.Scanner;
             Scanner scan = new Scanner(new File("files/enable.txt"));
             wordList = new ArrayList<>();
             while (scan.hasNext()) {
-                String answer  = scan.next();
+                String answer = scan.next();
                 wordList.add(answer);
             }
             scan.close();
@@ -85,10 +85,20 @@ import java.util.Scanner;
             int[] scores = new int[]{1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
             for (int i = 0; i < word.length(); i++) {
                 char letter = word.charAt(i);
-                int num2  = letter - 'a';
-                score += scores[num2];
+                score += scores[];
             }
             return score;
         }
+        public void score (ArrayList<String> array) {
+            for (int i = 0; i < array.size(); i++) {
+                int answer = i;
+                for (int a = i + 1; a < array.size(); a++) {
+                    if (getScores(array.get(a)) > getScores(array.get(answer)));
+                       answer = a;
+
 
     }
+
+
+
+
